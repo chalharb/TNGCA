@@ -1,0 +1,14 @@
+// Import Bootstrap Compass integration
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap-compass";
+// Import custom Bootstrap variables
+
+// Import Bootstrap for Sass
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+
+///BEGIN STYLES
+@import "variables";
+@import "general";
+@import "mobile";
+@import "tablet";
+@import "laptop";
+@import "desktop";

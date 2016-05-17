@@ -1,0 +1,39 @@
+/* General Styles */
+
+*{
+  font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 200;
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 400;
+}
+
+.navbar{
+  margin:0;
+}
+
+.btn-general{
+  @extend .btn;
+  @extend .btn-default;
+  @extend .btn-lg;
+  border-radius: 0;
+  border: 2px solid white;
+  color: white;
+  background:none;
+
+  @include transition(background, 250ms);
+
+  &:hover, &:active, &:focus, &:visited{
+    color: white;
+    background: rgba(black, .5);
+    border: 2px solid white;
+  }
+
+  &:active, &:focus{
+    color: white !important;
+    background: none !important;
+    border: 2px solid white !important;
+  }
+}
